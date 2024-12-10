@@ -10,7 +10,7 @@ class Acli < Formula
   on_macos do
     on_intel do
       url "https://statlas.prod.atl-paas.net/cli/dist/darwin_arm64/acli", using: CurlDownloadStrategy
-      sha256 "60338e62975c5a9fff079b2235651ed65a24b142b43eb589032f89a3b3bc0385"
+      sha256 "80a46f789c8b0ce5e29ee4a6cb6e0e0625b2e99c6e5c6144aa5853d9284ec6a1"
 
       def install
         bin.install "acli"
@@ -18,7 +18,7 @@ class Acli < Formula
     end
     on_arm do
       url "https://statlas.prod.atl-paas.net/cli/dist/darwin_arm64/acli", using: CurlDownloadStrategy
-      sha256 "0943929a5101ff08a53baf6b76f7dd412e354a2afdf1226d61bea0ea643ffb58"
+      sha256 "9ba081e4afe68b3214ad5e50d6e962803c6c2152f8a4115a09ef2e5dc9a6dfd0"
 
       def install
         bin.install "acli"
@@ -30,7 +30,7 @@ class Acli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://statlas.prod.atl-paas.net/cli/dist/darwin_arm64/acli", using: CurlDownloadStrategy
-        sha256 "f4488f37a6919aea6cb6a9e6f1350761586eee5b5a938ce8dfbb978a96998f6b"
+        sha256 "9f9b181a146f33ddb260520357b6ef524042a3323e982a479fcc53fa8256dda9"
 
         def install
           bin.install "acli"
@@ -40,7 +40,7 @@ class Acli < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://statlas.prod.atl-paas.net/cli/dist/darwin_arm64/acli", using: CurlDownloadStrategy
-        sha256 "0d94194d6ff7e33c9d91a935dbbeebb2ae30b26aa3a024d52e1d1b3a0628554a"
+        sha256 "d8bc2de45f866f2ef3db1c4810ac6ab66d360d4983913068cae9b890a2039cc0"
 
         def install
           bin.install "acli"
