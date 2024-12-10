@@ -9,16 +9,16 @@ class Acli < Formula
 
   on_macos do
     on_intel do
-      url "https://statlas.prod.atl-paas.net/cli/dist/darwin_arm64/acli", using: CurlDownloadStrategy
-      sha256 "80a46f789c8b0ce5e29ee4a6cb6e0e0625b2e99c6e5c6144aa5853d9284ec6a1"
+      url "https://dbknq1bqdz78a.cloudfront.net/darwin/0.0.9/acli_0.0.9_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "edd5cd22f6a1eef17aa132e0060d60be5d210a2c6c92ea5ddcb952059ea25a98"
 
       def install
         bin.install "acli"
       end
     end
     on_arm do
-      url "https://statlas.prod.atl-paas.net/cli/dist/darwin_arm64/acli", using: CurlDownloadStrategy
-      sha256 "9ba081e4afe68b3214ad5e50d6e962803c6c2152f8a4115a09ef2e5dc9a6dfd0"
+      url "https://dbknq1bqdz78a.cloudfront.net/darwin/0.0.9/acli_0.0.9_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2a666113d19746e4cf13a9721c9ab7c023e4d576e51f8edf9dfa0b14db27e2b7"
 
       def install
         bin.install "acli"
@@ -29,8 +29,8 @@ class Acli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://statlas.prod.atl-paas.net/cli/dist/darwin_arm64/acli", using: CurlDownloadStrategy
-        sha256 "9f9b181a146f33ddb260520357b6ef524042a3323e982a479fcc53fa8256dda9"
+        url "https://dbknq1bqdz78a.cloudfront.net/linux/0.0.9/acli_0.0.9_linux_amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "02c123339354303991fbce3444383641f7caff2fbe648caa172297558a805be6"
 
         def install
           bin.install "acli"
@@ -39,8 +39,8 @@ class Acli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://statlas.prod.atl-paas.net/cli/dist/darwin_arm64/acli", using: CurlDownloadStrategy
-        sha256 "d8bc2de45f866f2ef3db1c4810ac6ab66d360d4983913068cae9b890a2039cc0"
+        url "https://dbknq1bqdz78a.cloudfront.net/linux/0.0.9/acli_0.0.9_linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "cabf193fa998a024d9d5e5919c2b33f1b044efebfd4ff46bc5ccb7a6c7df9644"
 
         def install
           bin.install "acli"
