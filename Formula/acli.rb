@@ -10,7 +10,7 @@ class Acli < Formula
   on_macos do
     on_intel do
       url "https://dbknq1bqdz78a.cloudfront.net/darwin/0.0.9/acli_0.0.9_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "edd5cd22f6a1eef17aa132e0060d60be5d210a2c6c92ea5ddcb952059ea25a98"
+      sha256 "deaf4154dcb6adbe2f05e669e7e46a76a2c350c5e9739063e723557b9de1c534"
 
       def install
         bin.install "acli"
@@ -18,7 +18,7 @@ class Acli < Formula
     end
     on_arm do
       url "https://dbknq1bqdz78a.cloudfront.net/darwin/0.0.9/acli_0.0.9_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "2a666113d19746e4cf13a9721c9ab7c023e4d576e51f8edf9dfa0b14db27e2b7"
+      sha256 "ebae807a511cb0883426dc12cf0ab1467e8df7f04553d6d77f01bca28efa84c6"
 
       def install
         bin.install "acli"
@@ -30,7 +30,7 @@ class Acli < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://dbknq1bqdz78a.cloudfront.net/linux/0.0.9/acli_0.0.9_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "02c123339354303991fbce3444383641f7caff2fbe648caa172297558a805be6"
+        sha256 "531b57fd37d8771a517aa292db946283664bbdf477a1597e3e0387024846937d"
 
         def install
           bin.install "acli"
@@ -40,7 +40,7 @@ class Acli < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://dbknq1bqdz78a.cloudfront.net/linux/0.0.9/acli_0.0.9_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "cabf193fa998a024d9d5e5919c2b33f1b044efebfd4ff46bc5ccb7a6c7df9644"
+        sha256 "d714f32dfa04defac9927106bebfa3fed90737dd4262cd3892f58fcdcba053cc"
 
         def install
           bin.install "acli"
