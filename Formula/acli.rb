@@ -10,7 +10,7 @@ class Acli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://acli.atlassian.com/darwin/0.1.3/acli_0.1.3_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "857b33b56baad2740bba7841e9e093a0e8302f17017c101b7afa302e75acc1ce"
+      sha256 "1e006f87dd433b5bb2f5c2aa7b66e3d3bda94583e39ec1180eaa157ca1c3bf1f"
 
       def install
         bin.install "acli"
@@ -18,7 +18,7 @@ class Acli < Formula
     end
     if Hardware::CPU.arm?
       url "https://acli.atlassian.com/darwin/0.1.3/acli_0.1.3_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "04ef218056fe1ffb0a2264df3c53e986bcdf65bddf7ac7892392c5039e21fd3a"
+      sha256 "f4e4ea8ad56fde5fb29ea7f9be31b1d640c1ad8c1cf8de4a30d6ee71d8de14e7"
 
       def install
         bin.install "acli"
@@ -30,7 +30,7 @@ class Acli < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://acli.atlassian.com/linux/0.1.3/acli_0.1.3_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "e91686db4dfc19c6e069aea7e5b9ae052b0104b76f1a189cb51a5605f7f32a5f"
+        sha256 "29632b0c69dbbd8c49dd982ef3c1fd47a519bd750a23f15be9ddd94883a4f549"
 
         def install
           bin.install "acli"
@@ -40,7 +40,7 @@ class Acli < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://acli.atlassian.com/linux/0.1.3/acli_0.1.3_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "eefcf80df41010277e29e21807a7c27db4e9502bed28ff620364cf8f77abb862"
+        sha256 "bdea0cc1a5fd570787aef721dc148bd3d554379bef8131fddce4e6a7cf0146ec"
 
         def install
           bin.install "acli"
