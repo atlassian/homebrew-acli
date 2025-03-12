@@ -1,4 +1,4 @@
-# Homebrew Tap ( ACLI )
+# ACLI Homebrew Tap
 
 [![Atlassian license](https://img.shields.io/badge/license-Apache%202.0-blue.svg?style=flat-square)](LICENSE)[![Go Reference](https://pkg.go.dev/badge/github.com/spf13/cobra.svg)](https://pkg.go.dev/github.com/spf13/cobra)
 
