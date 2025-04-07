@@ -5,20 +5,20 @@
 class Acli < Formula
   desc "Software to interact with Atlassian Cloud from the terminal"
   homepage "https://developer.atlassian.com/cloud/acli/reference/commands/"
-  version "1.0.0-beta"
+  version "1.0.1-beta"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://acli.atlassian.com/darwin/1.0.0-beta/acli_1.0.0-beta_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "fa308dca83bff37cb70d1f3a30e7a7b726a32f25d234627a71f040417f4df563"
+      url "https://acli.atlassian.com/darwin/1.0.1-beta/acli_1.0.1-beta_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2cab8bdf69241bd867d6e97679584dd225a153e24e889da5b6c2abe168c83bad"
 
       def install
         bin.install "acli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://acli.atlassian.com/darwin/1.0.0-beta/acli_1.0.0-beta_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "997366b08996de888e422b06b6891f1c8f15988f842f9d1a54bfd1dc6a79ddde"
+      url "https://acli.atlassian.com/darwin/1.0.1-beta/acli_1.0.1-beta_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "72e1a937a412292724d02cf9b09e09f3496471b4a03c0b2c3c3325ad4f305846"
 
       def install
         bin.install "acli"
@@ -29,8 +29,8 @@ class Acli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://acli.atlassian.com/linux/1.0.0-beta/acli_1.0.0-beta_linux_amd64.tar.gz", using: CurlDownloadStrategy
-        sha256 "45189f72ac3e51de1c4360167af36b24e546989fc0d5ff3af06c98e46bf6c22f"
+        url "https://acli.atlassian.com/linux/1.0.1-beta/acli_1.0.1-beta_linux_amd64.tar.gz", using: CurlDownloadStrategy
+        sha256 "d13f41065250d0335678a615bdfbb36c64f3afffbcaf22b2b6a5ce9ad20f9561"
 
         def install
           bin.install "acli"
@@ -39,8 +39,8 @@ class Acli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://acli.atlassian.com/linux/1.0.0-beta/acli_1.0.0-beta_linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "a3d87770aa09c2d3db2dbab2e407ac826a8f96805b1a7c92e0f5cdf50e6fe1ad"
+        url "https://acli.atlassian.com/linux/1.0.1-beta/acli_1.0.1-beta_linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "83cf84579282fe371d07386fb5be266676bf0f43fc1c1900cbafd7b8dfcca16a"
 
         def install
           bin.install "acli"
