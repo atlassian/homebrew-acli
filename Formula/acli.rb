@@ -10,7 +10,7 @@ class Acli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://acli.atlassian.com/darwin/1.1.1-rovodev/acli_1.1.1-rovodev_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "75f56d3adb8a27169ef38dd5ed33170a20342adf2e76083ef75f212a1acc054a"
+      sha256 "ed39e27ce01b0e1af0410bd9497b3f21b8ef5b3fa5446a33916baa9cef255497"
 
       def install
         bin.install "acli"
@@ -18,7 +18,7 @@ class Acli < Formula
     end
     if Hardware::CPU.arm?
       url "https://acli.atlassian.com/darwin/1.1.1-rovodev/acli_1.1.1-rovodev_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1b78cc407e1525472a2a9a07e6906584f9f0c1dc5629a06a417307f514b1186a"
+      sha256 "7af9c416177994ac20af6f049cbd181cffc54aff3f5e395924656296f0c3567e"
 
       def install
         bin.install "acli"
@@ -29,14 +29,14 @@ class Acli < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://acli.atlassian.com/linux/1.1.1-rovodev/acli_1.1.1-rovodev_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "ff64525d8deea93d9ae1e83efdd3a4ec89cde1da22ecb10078cd53bc0d219367"
+      sha256 "e1f166be4484ed874c85d852a1c4d3ee3e0cde07597b1c08d17ab922df7a2962"
       def install
         bin.install "acli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://acli.atlassian.com/linux/1.1.1-rovodev/acli_1.1.1-rovodev_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "213e3b80d9cb570f836805956ed09030fcc88c7b67dc914a75f003bcb224cb5e"
+      sha256 "174ddb11eb2209213e142353b9d7c5806de662e758aa77b77a33a0b2431a9639"
       def install
         bin.install "acli"
       end
