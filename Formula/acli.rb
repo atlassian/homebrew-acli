@@ -5,20 +5,20 @@
 class Acli < Formula
   desc "Software to interact with Atlassian Cloud from the terminal"
   homepage "https://developer.atlassian.com/cloud/acli/reference/commands/"
-  version "1.2.4-stable"
+  version "1.2.5-stable"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://acli.atlassian.com/darwin/1.2.4-stable/acli_1.2.4-stable_darwin_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "a3f4177f9115851b56b8bf8c40ede9358e967d9d3e8a175585173715dae0e1de"
+      url "https://acli.atlassian.com/darwin/1.2.5-stable/acli_1.2.5-stable_darwin_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "11519b62ea99fe6e6c3e4506e9367cecc9b8aa7ed4ebecd9cdaf76a592e0ed3f"
 
       def install
         bin.install "acli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://acli.atlassian.com/darwin/1.2.4-stable/acli_1.2.4-stable_darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "89d11d3e3a951af9916b771d3c6a2c108bd3efadb5898a7dc841a4bd57e5f33a"
+      url "https://acli.atlassian.com/darwin/1.2.5-stable/acli_1.2.5-stable_darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f3f5f4a3edd85fc7eaa0fc35cd009827c956b316366f37fff1230e7bb7f1e19b"
 
       def install
         bin.install "acli"
@@ -28,15 +28,15 @@ class Acli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://acli.atlassian.com/linux/1.2.4-stable/acli_1.2.4-stable_linux_amd64.tar.gz", using: CurlDownloadStrategy
-      sha256 "23eb0d53e0473b219a5f2552982a37a6e9679e5749e601a5a4a75404aa707727"
+      url "https://acli.atlassian.com/linux/1.2.5-stable/acli_1.2.5-stable_linux_amd64.tar.gz", using: CurlDownloadStrategy
+      sha256 "6b52b5ae6d2cf3075e0367aaeaf38d3dad2500b0b948b289dcc2dd839eef518a"
       def install
         bin.install "acli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://acli.atlassian.com/linux/1.2.4-stable/acli_1.2.4-stable_linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "16bfdca5592533352e29771d880ac701bf4b8e3d9c9d91a1bb44fd4d08524a13"
+      url "https://acli.atlassian.com/linux/1.2.5-stable/acli_1.2.5-stable_linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "4ddf8f81e4def00c5c177ef9c6649a2aad703681ac4fa0fcca94469d87df7fb6"
       def install
         bin.install "acli"
       end
