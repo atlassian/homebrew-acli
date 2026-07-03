@@ -19,6 +19,18 @@ $ brew tap atlassian-labs/acli
 $ brew install acli
 ```
 
+### Homebrew tap trust
+
+Homebrew 6 can require non-official taps to be trusted before installing or
+upgrading formulae from them. If Homebrew reports that the ACLI tap is not
+trusted, trust the tap name shown in the warning before retrying:
+
+```shell
+$ brew trust atlassian/acli
+```
+
+Only trust the tap if you trust this repository and the formulae it provides.
+
 ## License
 
 Copyright (c) 2025 Atlassian US., Inc.
