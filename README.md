@@ -14,7 +14,7 @@ associated with manual operations.
 Via Homebrew
 
 ```shell
-$ brew tap atlassian-labs/acli
+$ brew tap atlassian/acli
 
 $ brew install acli
 ```
